@@ -8,6 +8,8 @@ import 'package:twiiter_clone/layout/pages/authentication/auth_method_selection.
 import 'package:twiiter_clone/logic_source/provider_logic/business_logic.dart';
 
 void main() async {
+  await dotenv.load(fileName: '.env');
+
   runZonedGuarded(
     () {
       runApp(const MyApp());
